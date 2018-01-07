@@ -14,7 +14,7 @@ This extension contributes the following settings
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+It should work now.
 
 ### 0.0.0
 
