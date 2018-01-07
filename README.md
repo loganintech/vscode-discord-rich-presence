@@ -4,7 +4,7 @@ This extension enables discord rich presence integration for VSCode
 
 ## Features
 
-Enables discord [rich presence integration](https://discordapp.com/rich-presence) with VSCode. Entry looks like this: https://i.imgur.com/I3o1pDN.png
+Enables discord [rich presence integration](https://discordapp.com/rich-presence) with VSCode. Entry looks like this ![](https://i.imgur.com/I3o1pDN.png)
 
 ## Extension Settings
 
