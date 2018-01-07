@@ -1,0 +1,49 @@
+{
+    "name": "vscode-discord-rich-presence",
+    "displayName": "Discord Rich Presence",
+    "description": "Supplies a rich presence integration for Discord",
+    "version": "0.0.1",
+    "publisher": "jewsofhazard",
+    "engines": {
+        "vscode": "^1.1.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onLanguage:typescript",
+        "*"
+    ],
+    "main": "./out/extension",
+    "contributes": {
+        "commands": [],
+        "configuration": {
+            "title": "Discord Rich Presence Configuration",
+            "properties": {
+                "drp.invisible": {
+                    "type": "boolean",
+                    "default": false,
+                    "description": "Determines if you want to hide current presence. Defaults to visible."
+                }
+            }
+        }
+    },
+    "scripts": {
+        "vscode:prepublish": "npm run compile",
+        "compile": "tsc -p ./",
+        "watch": "tsc -watch -p ./",
+        "postinstall": "node ./node_modules/vscode/bin/install",
+        "test": "npm run compile && node ./node_modules/vscode/bin/test"
+    },
+    "devDependencies": {
+        "typescript": "^2.6.1",
+        "vscode": "^1.1.6",
+        "@types/node": "^7.0.43",
+        "@types/mocha": "^2.2.42"
+    },
+    "dependencies": {
+        "discord-rich-presence": "0.0.6",
+        "register-scheme": "github:devsnek/node-register-scheme",
+        "zlib-sync": "^0.1.4"
+    }
+}
